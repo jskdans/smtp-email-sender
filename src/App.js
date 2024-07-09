@@ -18,15 +18,15 @@ function App() {
     });
 
     if (response.ok) {
-      alert('Email sent successfully!');
+      alert('Email enviado correctamente!');
     } else {
-      alert('Failed to send email.');
+      alert('Error al enviar email.');
     }
   };
 
   return (
     <div className="App">
-      <h1>Send Email</h1>
+      <h1>Correos SMTP</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Email:</label>
@@ -38,7 +38,7 @@ function App() {
           />
         </div>
         <div>
-          <label>Subject:</label>
+          <label>Asunto:</label>
           <input
             type="text"
             value={subject}
@@ -47,14 +47,14 @@ function App() {
           />
         </div>
         <div>
-          <label>Message:</label>
+          <label>Mensaje:</label>
           <textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
           />
         </div>
-        <button type="submit">Send Email</button>
+        <button type="submit">Enviar email</button>
       </form>
     </div>
   );
