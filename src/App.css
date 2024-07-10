@@ -1,51 +1,12 @@
-body{
+body {
   background-color: antiquewhite;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 .App {
-  text-align: center;
-  margin-top: 50px;
-}
-
-form {
-  display: inline-block;
-  width: auto;
-  margin: 0 auto;
-  padding: 10px 30px;
-  text-align: center;
-  background-color: rgb(192, 218, 252);
-  border-radius: 5px;
-  box-shadow:5px 5px 25px rgba(97, 95, 95, 0.5);
-}
-
-div {
-  margin-bottom: 10px;
-  text-align: left;
-  
-}
-
-label {
-  display: block;
-  font-weight: bold;
-}
-
-input, textarea {
-  width: 95%;
-  padding: 8px;
-  margin-top: 5px;
-  border-radius: 5px;
-  border: none;
-  font: ;
-}
-
-button {
-  background-color: #7181ec;
-  color: rgb(0, 0, 0);
-  border: none;
-  cursor: pointer;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
